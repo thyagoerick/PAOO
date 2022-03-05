@@ -74,3 +74,22 @@ function max(xs: number[]): number | undefined{
 
 **isinstaceof**: verifica a cadeia de herança para cima, todos da sua cadeia retorna _true_ e fora da sua cadeia retorna _false_
 
+---
+
+### **Exercicio 1:**
+
+* arquivo: exe_1.ts
+
+Escreva uma função que recebe xs: string[] e uma função key que: (s:string) => number e devolve undefined, se xs é vazio, ou, em caso contrário, devolve uma string s de xs cuja chave kay(s) é máxima. 
+
+---
+
+### Arrow Function / lambda
+
+* arquivo: lbd.ts 
+
+
+    ((x:number) => x*x)(5)
+    RESULTADO: 25
+
+---

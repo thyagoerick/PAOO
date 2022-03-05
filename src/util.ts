@@ -11,7 +11,7 @@ function maxV0(xs: number[]): number{
     }
     return cand;
 }
-*/
+
 function max(xs: number[]): number | undefined{
     if (xs.length == 0) return undefined;
     let cand = xs[0];
@@ -23,7 +23,7 @@ function max(xs: number[]): number | undefined{
     return cand;
 }
                             //key é uma função que recebe um number e devolve um number
-function maxBy(xs: number[], key: (x: number) => number): number | undefined{
+/*function maxBy(xs: number[], key: (x: number) => number): number | undefined{
     if(xs.length == 0) return undefined;
     let cand = xs[0];
     for (const x of xs){
@@ -31,11 +31,28 @@ function maxBy(xs: number[], key: (x: number) => number): number | undefined{
     }
     return cand;
 }
+*/
 
-const r = max([2,3,1,8,3,5]);
+/*const r = max([2,3,1,8,3,5]);
+if(r != undefined) console.log(r + 2);*/
+//console.log(max([2,3,1,8,3,5]));
 
-if(r != undefined) console.log(r + 2);
+//function square(x: number): number{ return x*x;}
 
-console.log(max([2,3,1,8,3,5]));
+//console.log(maxBy([-4,2,3,-8,5,7], square));
 
-//console.log(max([]));
+             // variáveis de tipos - tipos genéricos
+function maxBy<A>(xs: A[], key: (x:A) => number): A | undefined{
+    if(xs.length == 0) return undefined;
+    let cand = xs[0];
+    for (const x of xs){
+        if (key(x) > key(cand)) cand = x;
+    }
+    return cand;
+
+}
+function leng(s: string): number{ return s.length;}
+
+console.log(maxByStr(['joao','maria','ana', 'sabrina', 'antonio'], leng));
+
+//console.log(maxBy([-4,2,3,-8,5,7], len));
