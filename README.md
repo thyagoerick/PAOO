@@ -37,3 +37,40 @@ $ tsc -w
 ```
 > _**typescript (tsc) watch mode (-w)**_: "observa" o arquivo que fornece as opções de compilação; "Transpila" automaticamente os arquivos .ts que estão em **"rootDir"**.
 ---
+
+## Aula 03 - 05/03/2022
+
+- arquivo: _util.ts_
+
+**Exemplo:**
+
+    for(const x of xs)
+
+*const* = constante
+
+*let* = "varável"
+
+*in* = mostra o indicie
+
+*of* = mostra o valor
+
+>Obs.: caso seja declarado um valor que não exista em um vetor ele informa _**undefined**_
+
+>Obs.: NaN = Not a Number
+
+Type Union = |
+
+**Exemplo:**
+
+``` TypeScript
+function max(xs: number[]): number | undefined{ 
+    ...
+    ...
+    ...
+}
+```
+---
+### **Em Java:**
+
+**isinstaceof**: verifica a cadeia de herança para cima, todos da sua cadeia retorna _true_ e fora da sua cadeia retorna _false_
+
