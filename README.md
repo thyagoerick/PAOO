@@ -93,3 +93,20 @@ Escreva uma função que recebe xs: string[] e uma função key que: (s:string) 
     RESULTADO: 25
 
 ---
+
+## Aula 04 - 19/03/2022
+
+- arquivos:
+    - _aula19ex1.ts_
+    - _aula19ex2.ts_
+    - _aula19ex3.ts_
+    - _ex4.ts_
+
+
+# [COPIAR ANOTAÇÕES DA GALERIA DEPOIS]
+
+---
+
+## Aula 05 - 02/04/2022
+
+Uma função x que recebe uma função y como parâmetro, esta função x é uma função de alta ordem.
